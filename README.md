@@ -3,53 +3,69 @@
 Documentation
 Documentation for the Radar Chart Widget (Unreal Engine) Plugin
 Available at the Marketplace: [will follow soon]
-
+# Overview
 <details>
-<summary >Overview</summary>
+<summary>Designer Settings</summary>
+
+![Image of Designer Settings](Resources/Settings.png)
 
 + <details>
-    <summary>Designer Settings</summary>
+    <summary>Chart</summary>
 
-    ![Image of Designer Settings](Resources/Settings.png)
+    |Setting|Description|
+    |---|---|
+    |Keep Aspect Ratio:|True = Force the Chart to keep aspect ratio, calculated by the smallest size. </br> False = Stretch to fill.|
+    |Scale:|Scale the Radius of the whole Shape. 2.f meaning the shape is the size of the clipping rect. Caution this does not respect the labels!|
+    |Appearance:|Appearance Settings for the Base. See [FRadarChartAppearance](###FRadarChartAppearance)|
 
-    + <details>
-        <summary>Chart</summary>
-
-        |Setting|Description|
-        |---|---|
-        |Keep Aspect Ratio:|True = Force the Chart to keep aspect ratio, calculated by the smallest size. </br> False = Stretch to fill.|
-        |Scale:|Scale the Radius of the whole Shape. 2.f meaning the shape is the size of the clipping rect. Caution this does not respect the labels!|
-        |Appearance:|Appearance Settings for the Base. See [FRadarChartAppearance](#FRadarChartAppearance)|
-
-    </details>
 </details>
-
-
+</details>
 
 ## Structs
-+ <details>
 
-    ### FRadarChartAppearance
-    |Setting|Description|
-    |---|---|
-    |bDraw:|Show/Hide the complete Shape Layer, including the Outline and Pins. |
-    |Scale: | Scale the Radius of the whole Shape. 2.f meaning the shape is the size of the clipping rect. Caution this does not respect the labels!|
-    |Appearance: |Appearance Settings for the Base. See FRadarChartAppearance Struct|
+<details>
 
-    ### FRadarChartSegment
-    <details>
+<summary> FRadarChartAppearance</summary>
 
-    |Setting|Description|
-    |---|---|
-    |Keep Aspect Ratio:|True = Force the Chart to keep aspect ratio, calculated by the smallest size. </br> False =Stretch to fill.|
-    |Scale: | Scale the Radius of the whole Shape. 2.f meaning the shape is the size of the clipping rect. Caution this does not respect the labels!|
-    |Appearance: |Appearance Settings for the Base. See FRadarChartAppearance Struct|
+### <a name="FRadarChartAppearance"></a>
+|Type|Name|Description
+|---|---|---|
+|bool|Draw:|Show/Hide the complete Shape Layer, including the Outline and Pins.|
+|bool|Draw Shape:|Show/Hide the Shape.|
+|bool|Concentric UVs:|True: The UVs are layed out pointing towards the center, making it easy to create radial symmetry. <br>False: The UVs are layed out normally.|
+|bool|Draw Outline:|Show/Hide the outline|
+|bool|Draw Pins:|Show/Hide the Pins|
+|ERadarChartBlendMode|BlendMode:|Set the BlendMode of the used Material. See [ERadarChartBlendMode](#ERadarChartBlendMode)|
+
+</details>
+
+<details>
+<summary> FRadarChartSegment</summary>
+
+|Setting|Description|
+|---|---|
+|Keep Aspect Ratio:|True = Force the Chart to keep aspect ratio, calculated by the smallest size. </br> False =Stretch to fill.|
+|Scale: | Scale the Radius of the whole Shape. 2.0 meaning the shape is the size of the clipping rect. Caution this does not respect the labels!|
+|Appearance: |Appearance Settings for the Base. See FRadarChartAppearance Struct|
+
+</details>
+
+
+## Enums
+ <details>
+
+### ERadarChartBlendMode
+|Name|Description|
+|---|---|
+|Opaque:| Set the Material to Opaque, Render Opacity is not supported. Best perfomance, less overdraw.|
+|Translucent:| Set the Material to Translucent, Render Opacity is supported. Use final Alpha defined by color as opacity.|
+|Additive:| Set the Material to Additive, adds it's color to the underlaying Pixels.|
 
 </details>
 
 
 
-## Usage
+# Usage
 <details>
 
 </details>
