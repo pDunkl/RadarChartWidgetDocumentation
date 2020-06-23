@@ -26,7 +26,7 @@ Available at the Marketplace: [will follow soon]
     * 1.3\. [Types](#Types)
         * 1.3.1\. [Structs](#Structs)
         * 1.3.2\. [Enums](#Enums)
-    * 1.4\. Tips [Tips](#Tips)
+    * 1.4\. [Tips](#Tips)
 
 # Overview
 
@@ -211,7 +211,7 @@ Otherwise all Pins & Icons will stay a their specified PixelSize * DPI;
 |![Undesired Pin Scaling](Resources/BadIconScale.gif)|No SizeBox & ScaleBox, unwanted scaling behaviour.|
 |![Desired Pin Scaling](Resources/GoodIconScale.gif)|Hierarchy:</br>-ScaleBox</br>&nbsp;&nbsp;&nbsp;&nbsp;-SizeBox</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</bre>-RadarChart|
 
- SizeBox set Height & Width Override: 500)
+ For this example the SizeBox is set to Height & Width Override: 500
 
 </details>
 </body>
