@@ -19,11 +19,13 @@ Available at the Marketplace: [will follow soon]
         * 1.1.5\. [Label Settings](#LabelSettings)
         * 1.1.6\. [Values](#Values)
         * 1.1.7\. [Perfomance](#Perfomance)
-    * 1.2\. [Types](#Types)
-        * 1.2.1\. [Structs](#Structs)
-        * 1.2.2\. [Enums](#Enums)
-
-
+    * 1.2\. [Functions](#Functions)
+        * 1.2.1\. [Set Values](#SetValues)
+        * 1.2.2\. [Invalidate Material](#InvalidateMaterial)
+        * 1.2.3\. [Invalidate Panel](#InvalidatePanel)
+    * 1.3\. [Types](#Types)
+        * 1.3.1\. [Structs](#Structs)
+        * 1.3.2\. [Enums](#Enums)
 
 # Overview
 
@@ -97,10 +99,31 @@ The Rings dividing the Cuts
 ### Perfomance
 |Type|Setting|Description|
 |---|---|---|
-|bool|Wrap with Invalidation Panel|[Recommended] Wrap the Chart inside an SInvalidationPanel, so it gets cached. Saves performance! But needs to be invalidated if the Chart gets modified. See [InvalidatePanel](#InvalidatePanel)|
+|bool|Wrap with Invalidation Panel|[Recommended] Wrap the Chart inside an SInvalidationPanel, so it gets cached. Saves performance! But needs to be invalidated if the Chart gets modified. See [Invalidate Panel](#InvalidatePanel)|
 
 # Functions
-## Invalidate Panel
+## <a name="SetValues"></a>Set Values
+Value Layer Index = Index of the Value Layers, mostly 0 if you have just a single layer.
+</br> Value Index = Index of the float array you want to modify.
+
+|Function|Name|Description|
+|---|---|---|
+|![Set Value Function](Resources/SetSingleValue.png)|Set Value|Use this function if just a single value needs to be updated.</br>The wanted Value Layer must already exist.</br> The wanted Value must already exist.|
+|![Set Values for Layer Function](Resources/SetValuesForLayer.png)|Set Values for Layer|Use this function to update all values for a specific layer at once. </br>This funciton takes in an array of raw floats. The Values array must be the same size as the segments!</br>The wanted Value Layer must already exist.|
+|![Set Values Data for Layer Function](Resources/SetValuesDataForLayer.png)|Set Values Data for Layer|Use this function if you want to set the values AND appearance for a specific layer.</br> This functions takes in an array of [FRadarChartValueData](#FRadarChartValueData).</br>The wanted Value Layer must already exist.|
+![Set All Values Data Function](Resources/SetAllValuesData.png)|Set All Values Data| Use this Function to overwrite the whole ValueLayers data.|
+
+## <a name="InvalidateMaterial"></a>Invalidate Material
+If you change the Texture and/or the BlendMode of any appearance, you must invalidate the Material, to take effect.
+
+|Function|Name|Description|
+|---|---|---|
+|![Invalidate Material](Resources/InvalidateMaterial.png)|Invalidate Material|This fuction is used if you want to change the texture or the BlendMode of a single Appearance. This function takes in a [FRadarChartAppearance](FRadarChartAppearance), only it's material get invalidated.</br>Call it after the changes.|
+|![Invalidate Material](Resources/InvalidateAllMaterials.png)|Invalidate All Materials|This fuction is used if you want to change the texture or the BlendMode multiple Appearances. This function has no inputs, because it updates the materials in all available Appearances (Base and Values). </br>Call it after the changes.|
+
+## <a name="InvalidatePanel"></a>Invalidate Panel
+If [Wrap with Invalidation Panel](#Perfomance) is set to true, you must invalidate the Panel after you made ANY changes, or it won't take any effect. Because the whole Chart is cached, and it's OnPaint function is not called. Avoid calling it multiple times consecutively.
+![Invalidate Panel](Resources/InvalidatePanel.png)
 
 ## Types
 ### Structs
