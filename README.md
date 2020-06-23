@@ -146,6 +146,12 @@ If [Wrap with Invalidation Panel](#Perfomance) is set to true, you must invalida
 |float|Outline Thickness:|Thickness for the Outline. Default = 1.f, but sometimes you need to increase it to something greater, because of antialiasing glitches.|
 |[FRadarChartPin](#FRadarChartPin)|Pin:| Style for the Pins. Pins are Images/Materials drawn on the corners of the shape.|
 
+#### FRadarChartColorOverride
+|Type|Name|Description
+|---|---|---|
+|[ERadarChartColorOverride](#ERadarChartColorOverride)|Method| Method used to modify the segment color with. See [ERadarChartColorOverride](#ERadarChartColorOverride)|
+|FLinearColor|Color|The color to use for the manipulation|
+
 #### FRadarChartValueData
 |Type|Name|Description
 |---|---|---|
