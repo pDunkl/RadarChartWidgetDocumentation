@@ -32,10 +32,8 @@ Available at the Marketplace: [will follow soon]
 
 
 <details>
-    
-<summary> FRadarChartAppearance</summary>
-    
-<a name="FRadarChartAppearance"></a>
+<summary><a name="FRadarChartAppearance">FRadarChartAppearance</a></summary>
+
 |Type|Name|Description
 |---|---|---|
 |bool|Draw:|Show/Hide the complete Shape Layer, including the Outline and Pins.|
