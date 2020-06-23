@@ -1,8 +1,13 @@
 ![Image of Promo](Resources/Promo.png)
-# Radar Chart Widget 
-Documentation
-Documentation for the Radar Chart Widget (Unreal Engine) Plugin
+
+<h1>Radar Chart Widget</h1>
+
+|<img src="Resources/Thumbnail.png" alt="drawing" width="100"/>| <h2> Documentation for the Radar Chart Widget (Unreal Engine) Plugin </h2>|
+|---|---|
+
+
 Available at the Marketplace: [will follow soon]
+
 # Overview
 <details>
 <summary>Designer Settings</summary>
@@ -16,7 +21,7 @@ Available at the Marketplace: [will follow soon]
     |---|---|
     |Keep Aspect Ratio:|True = Force the Chart to keep aspect ratio, calculated by the smallest size. </br> False = Stretch to fill.|
     |Scale:|Scale the Radius of the whole Shape. 2.f meaning the shape is the size of the clipping rect. Caution this does not respect the labels!|
-    |Appearance:|Appearance Settings for the Base. See [FRadarChartAppearance](###FRadarChartAppearance)|
+    |Appearance:|Appearance Settings for the Base. See <a href="#FRadarChartAppearance">FRadarChartAppearance</a>|
 
 </details>
 </details>
@@ -24,10 +29,11 @@ Available at the Marketplace: [will follow soon]
 ## Structs
 
 <details>
-
+<a name="FRadarChartAppearance"></a>
 <summary> FRadarChartAppearance</summary>
 
-### <a name="FRadarChartAppearance"></a>
+
+
 |Type|Name|Description
 |---|---|---|
 |bool|Draw:|Show/Hide the complete Shape Layer, including the Outline and Pins.|
