@@ -1,5 +1,3 @@
-<link href="style.css" rel="stylesheet"></link>
-
 ![Image of Promo](Resources/Promo.png)
 
 <h1>Radar Chart Widget</h1>
