@@ -15,7 +15,7 @@ Available at the Marketplace: [will follow soon]
         * 1.1.2\. [Segments](#Segments)
         * 1.1.3\. [Cuts](#Cuts)
         * 1.1.4\. [Dividers](#Dividers)
-        * 1.1.5\. [Label Settings](#Label-Settings)
+        * 1.1.5\. [Label Settings](#LabelSettings)
         * 1.1.6\. [Values](#Values)
         * 1.1.7\. [Perfomance](#Perfomance)
 * 2\. [Usage](#Usage)
@@ -65,7 +65,7 @@ The Rings dividing the Cuts
 |float|Dividers Thickness:|How thick the dividers should be drawn. Default = 1.f, but sometimes you need to increase it to something greater, because of antialiasing glitches.|
 |uint8 (byte)|Dividers ZOrder Offset:| Adjust the Z Order, 0 = draw underneath the shape, 1 = above, any higher to draw above Value Layers, etc. slider max = 32, typed in max = 255.
 
-<h1><a id="Label-Settings" class="anchor" href="#header-title">Header Title</a></h1>
+### <a name="LabelSettings"></a>Label Settings
 
 ### Values
 |Type|Setting|Description|
