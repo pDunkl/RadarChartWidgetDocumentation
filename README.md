@@ -38,6 +38,7 @@ Available at the Marketplace: [will follow soon]
 </details>
 
 
+
 ### Chart
 |Type|Setting|Description|
 |---|---|---|
@@ -102,6 +103,8 @@ The Rings dividing the Cuts
 |---|---|---|
 |bool|Wrap with Invalidation Panel|[Recommended] Wrap the Chart inside an SInvalidationPanel, so it gets cached. Saves performance! But needs to be invalidated if the Chart gets modified. See [Invalidate Panel](#InvalidatePanel)|
 
+
+
 # Functions
 ## <a name="SetValues"></a>Set Values
 Value Layer Index = Index of the Value Layers, mostly 0 if you have just a single layer.
@@ -125,6 +128,8 @@ If you change the Texture and/or the BlendMode of any appearance, you must inval
 ## <a name="InvalidatePanel"></a>Invalidate Panel
 If [Wrap with Invalidation Panel](#Perfomance) is set to true, you must invalidate the Panel after you made ANY changes, or it won't take any effect. Because the whole Chart is cached, and it's OnPaint function is not called. Avoid calling it multiple times consecutively.
 ![Invalidate Panel](Resources/InvalidatePanel.png)
+
+
 
 ## Types
 ### Structs
@@ -152,6 +157,16 @@ If [Wrap with Invalidation Panel](#Perfomance) is set to true, you must invalida
 |[ERadarChartColorOverride](#ERadarChartColorOverride)|Method| Method used to modify the segment color with. See [ERadarChartColorOverride](#ERadarChartColorOverride)|
 |FLinearColor|Color|The color to use for the manipulation|
 
+#### FRadarChartPin
+|Type|Name|Description
+|---|---|---|
+|UObject*|Icon:|Icon to use as Pin, can be a Texture or Material (Domain must be UI!)|
+|FVector2D|Size:|Size of the Pin. Default = <32.0, 32.0>|
+|[FRadarChartColorOverride](#FRadarChartColorOverride)|Color:|ColorCoding for the Pin. See [FRadarChartColorOverride](#FRadarChartColorOverride).|
+|float|Distance:|Distance offset from the corners. Negative goes towards the center, and positive values in the opposite direction.
+|float|Angle.| Rotate the Icon, in Degrees.|
+|uint8 (byte)|ZOrder Offset:| Adjust the Z Order, 0 = draw underneath the shape, 1 = above, any higher to draw above Value Layers, etc. slider max = 32, typed in max = 255.
+
 #### FRadarChartValueData
 |Type|Name|Description
 |---|---|---|
@@ -167,15 +182,6 @@ If [Wrap with Invalidation Panel](#Perfomance) is set to true, you must invalida
 |FText|SubLabel:|Usually set to the current value.|
 |FVector2D|Offset:|Additional offset to adjust the position of the Icon, Label, SubLabel and Label Background for this segment only, at once.|
 
-#### FRadarChartPin
-|Type|Name|Description
-|---|---|---|
-|UObject*|Icon:|Icon to use as Pin, can be a Texture or Material (Domain must be UI!)|
-|FVector2D|Size:|Size of the Pin. Default = <32.0, 32.0>|
-|[FRadarChartColorOverride](#FRadarChartColorOverride)|Color:|ColorCoding for the Pin. See [FRadarChartColorOverride](#FRadarChartColorOverride).|
-|float|Distance:|Distance offset from the corners. Negative goes towards the center, and positive values in the opposite direction.
-|float|Angle.| Rotate the Icon, in Degrees.|
-|uint8 (byte)|ZOrder Offset:| Adjust the Z Order, 0 = draw underneath the shape, 1 = above, any higher to draw above Value Layers, etc. slider max = 32, typed in max = 255.
 
 ### Enums
 #### ERadarChartBlendMode
@@ -204,6 +210,8 @@ If [Wrap with Invalidation Panel](#Perfomance) is set to true, you must invalida
 |SubLabel:|Wrap around the SubLabel text.|
 |Icon:|Wrap around the icon.|
 |Custom:|Use Padding as Background Padding as size instead.|
+
+
 
 
 ## Tips
