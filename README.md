@@ -26,6 +26,7 @@ Available at the Marketplace: [will follow soon]
     * 1.3\. [Types](#Types)
         * 1.3.1\. [Structs](#Structs)
         * 1.3.2\. [Enums](#Enums)
+    * 1.4\. Tips [Tips](#Tips)
 
 # Overview
 
@@ -134,8 +135,16 @@ If [Wrap with Invalidation Panel](#Perfomance) is set to true, you must invalida
 |bool|Draw Shape:|Show/Hide the Shape.|
 |bool|Concentric UVs:|True: The UVs are layed out pointing towards the center, making it easy to create radial symmetry. <br>False: The UVs are layed out normally.|
 |bool|Draw Outline:|Show/Hide the outline|
-|bool|Draw Pins:|Show/Hide the Pins|
-|ERadarChartBlendMode|BlendMode:|Set the BlendMode of the used Material. See [ERadarChartBlendMode](#ERadarChartBlendMode)|
+|bool|Draw Pins:|Show/Hide the Pins.|
+|[ERadarChartBlendMode](#ERadarChartBlendMode)|BlendMode:|Set the BlendMode of the used Material. See [ERadarChartBlendMode](#ERadarChartBlendMode)|
+|[FRadarChartColorOverride](#FRadarChartColorOverride)|Shape Color:|ColorCoding for the Chart Shape. See [FRadarChartColorOverride](#FRadarChartColorOverride).|
+|UTexture2D*|Texture:|Texture to use for the Shape material.|
+|FVector2D|UV Size:| UVs for the Texture.|
+|float|Angle:|Rotation of the Texture.|
+|FVector2D|UV Size:| UVs for the Texture.|
+|FLinearColor|OutlineColor:|Color for the Outline. Using the Outline is recommended to hide the missing antialiasing from the shape edges.|
+|float|Outline Thickness:|Thickness for the Outline. Default = 1.f, but sometimes you need to increase it to something greater, because of antialiasing glitches.|
+|[FRadarChartPin](#FRadarChartPin)|Pin:| Style for the Pins. Pins are Images/Materials drawn on the corners of the shape.|
 
 #### FRadarChartValueData
 |Type|Name|Description
@@ -151,6 +160,16 @@ If [Wrap with Invalidation Panel](#Perfomance) is set to true, you must invalida
 |FText|Label:|Text Label for the current segment, example:"ATK".|
 |FText|SubLabel:|Usually set to the current value.|
 |FVector2D|Offset:|Additional offset to adjust the position of the Icon, Label, SubLabel and Label Background for this segment only, at once.|
+
+#### FRadarChartPin
+|Type|Name|Description
+|---|---|---|
+|UObject*|Icon:|Icon to use as Pin, can be a Texture or Material (Domain must be UI!)|
+|FVector2D|Size:|Size of the Pin. Default = <32.0, 32.0>|
+|[FRadarChartColorOverride](#FRadarChartColorOverride)|Color:|ColorCoding for the Pin. See [FRadarChartColorOverride](#FRadarChartColorOverride).|
+|float|Distance:|Distance offset from the corners. Negative goes towards the center, and positive values in the opposite direction.
+|float|Angle.| Rotate the Icon, in Degrees.|
+|uint8 (byte)|ZOrder Offset:| Adjust the Z Order, 0 = draw underneath the shape, 1 = above, any higher to draw above Value Layers, etc. slider max = 32, typed in max = 255.
 
 ### Enums
 #### ERadarChartBlendMode
@@ -182,4 +201,12 @@ If [Wrap with Invalidation Panel](#Perfomance) is set to true, you must invalida
 
 
 ## Tips
+If you want the Brushes (Pins & Icons) to resize uniformly with the chart you need to parent the chart inside a size box and this inside a scale box.
+Otherwise all Pins & Icons will stay a their specified PixelSize * DPI;
+<details>
+<summary>Show Example</summary>
+
+|![Undesired Pin Scaling](Resources/BadIconScale.gif)|![Undesired Pin Scaling](Resources/GoodIconScale.gif)|
+|---|---|
+</details>
 </body>
