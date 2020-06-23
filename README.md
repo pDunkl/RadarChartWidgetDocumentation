@@ -29,11 +29,11 @@ Available at the Marketplace: [will follow soon]
 ## Structs
 
 
-<a name="FRadarChartAppearance">FRadarChartAppearance</a>
+
 
 <details>
 <summary> FRadarChartAppearance</summary>
-
+<a name="FRadarChartAppearance"></a>
 |Type|Name|Description
 |---|---|---|
 |bool|Draw:|Show/Hide the complete Shape Layer, including the Outline and Pins.|
