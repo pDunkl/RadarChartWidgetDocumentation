@@ -2,7 +2,7 @@
 
 <h1>Radar Chart Widget</h1>
 
-|<img src="Resources/Thumbnail.png" alt="drawing" width="100"/>| <h2> Documentation for the Radar Chart Widget (Unreal Engine) Plugin </h2>|
+|<img src="Resources/Thumbnail.png" alt="drawing" width="100"/>| <h2> Documentation for the Radar Chart Widget Plugin for Unreal Engine </h2>|
 |---|---|
 
 
@@ -28,11 +28,11 @@ Available at the Marketplace: [will follow soon]
 
 ## Structs
 
+
+<a name="FRadarChartAppearance">FRadarChartAppearance</a>
+
 <details>
-<a name="FRadarChartAppearance"></a>
 <summary> FRadarChartAppearance</summary>
-
-
 
 |Type|Name|Description
 |---|---|---|
