@@ -206,7 +206,12 @@ Otherwise all Pins & Icons will stay a their specified PixelSize * DPI;
 <details>
 <summary>Show Example</summary>
 
-|![Undesired Pin Scaling](Resources/BadIconScale.gif)|![Desired Pin Scaling](Resources/GoodIconScale.gif)|
+|||
 |---|---|
+|![Undesired Pin Scaling](Resources/BadIconScale.gif)|No SizeBox & ScaleBox, unwanted scaling behaviour.|
+|![Desired Pin Scaling](Resources/GoodIconScale.gif)|Hierarchy:</br>-ScaleBox</br>&nbsp;&nbsp;&nbsp;&nbsp;-SizeBox</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</bre>-RadarChart|
+
+ SizeBox set Height & Width Override: 500)
+
 </details>
 </body>
