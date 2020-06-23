@@ -21,7 +21,7 @@ Available at the Marketplace: [will follow soon]
     |---|---|
     |Keep Aspect Ratio:|True = Force the Chart to keep aspect ratio, calculated by the smallest size. </br> False = Stretch to fill.|
     |Scale:|Scale the Radius of the whole Shape. 2.f meaning the shape is the size of the clipping rect. Caution this does not respect the labels!|
-    |Appearance:|Appearance Settings for the Base. See [FRadarChartAppearance](#FRadarChartAppearance)|
+    |Appearance:|Appearance Settings for the Base. See <a href="#FRadarChartAppearance">FRadarChartAppearance</a>|
 
 </details>
 </details>
@@ -32,8 +32,9 @@ Available at the Marketplace: [will follow soon]
 
 
 <details>
-<summary><a name="FRadarChartAppearance">FRadarChartAppearance</a></summary>
 
+<summary>FRadarChartAppearance</summary>
+<a name="FRadarChartAppearance">FRadarChartAppearance</a>
 |Type|Name|Description
 |---|---|---|
 |bool|Draw:|Show/Hide the complete Shape Layer, including the Outline and Pins.|
