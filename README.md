@@ -32,7 +32,9 @@ Available at the Marketplace: [will follow soon]
 
 
 <details>
+    
 <summary> FRadarChartAppearance</summary>
+    
 <a name="FRadarChartAppearance"></a>
 |Type|Name|Description
 |---|---|---|
