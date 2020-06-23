@@ -1,6 +1,9 @@
+<link href="style.css" rel="stylesheet"></link>
+
 ![Image of Promo](Resources/Promo.png)
 
 <h1>Radar Chart Widget</h1>
+<body>
 
 |<img src="Resources/Thumbnail.png" alt="drawing" width="100"/>| <h2> Documentation for the Radar Chart Widget Plugin for Unreal Engine </h2>|
 |---|---|
@@ -50,7 +53,7 @@ Available at the Marketplace: [will follow soon]
 The Lines going from the center to the outline.
 |Type|Setting|Description|
 |---|---|---|
-|bool|Draw Cuts:|Draw the Cuts.|
+|bool|Draw Cuts:|Show/Hide the cuts.|
 |FLinearColor|Cuts Color:|The Color of the Cuts.|
 |float|Cuts Thickness:|How thick the cuts should be drawn. Default = 1.f, but sometimes you need to increase it to something greater, because of antialiasing glitches.|
 |uint8 (byte)|Cuts ZOrder Offset:| Adjust the Z Order, 0 = draw underneath the shape, 1 = above, any higher to draw above Value Layers, etc. slider max = 32, typed in max = 255.
@@ -59,14 +62,25 @@ The Lines going from the center to the outline.
 The Rings dividing the Cuts
 |Type|Setting|Description|
 |---|---|---|
-|bool|Draw Dividers:|Draw the Dividers.|
+|bool|Draw Dividers:|Show/Hide the Dividers.|
 |FLinearColor|Dividers Color:|The Color of the Dividers.|
 |uint8 (byte)|Dividers Count:|How many dividers should be drawn, min = 1, slider max = 16, typed in max = 32.
 |float|Dividers Thickness:|How thick the dividers should be drawn. Default = 1.f, but sometimes you need to increase it to something greater, because of antialiasing glitches.|
 |uint8 (byte)|Dividers ZOrder Offset:| Adjust the Z Order, 0 = draw underneath the shape, 1 = above, any higher to draw above Value Layers, etc. slider max = 32, typed in max = 255.
 
 ### <a name="LabelSettings"></a>Label Settings
-
+|Type|Setting|Description|
+|---|---|---|
+|bool|Draw Icons:|Show/Hide the Icons.|
+|bool|Draw Labels:|Show/Hide the Text Labels.|
+|bool|Draw SubLabels:|Show/Hide the SubLabels.|
+|bool|Draw Label Background:|Show/Hide the Background behind the labels.|
+|float|Distance:| Distance from the outline vertex to the middle of the Text Label. 0 = The TextLabel is centered above the corner.|
+|float|Vertical Offset:| Offset all Labels up/down to accumulate for Icons/SubLabel positions. Use this to reposition the Labels if the vetical spacing is undesired.|
+|[FRadarChartColorOverride](#FRadarChartColorOverride)|Icon Color:|ColorCoding for the Icon. See [FRadarChartColorOverride](#FRadarChartColorOverride).|
+|uint8 (byte)|Dividers Count:|How many dividers should be drawn, min = 1, slider max = 16, typed in max = 32.
+|float|Dividers Thickness:|How thick the dividers should be drawn. Default = 1.f, but sometimes you need to increase it to something greater, because of antialiasing glitches.|
+|uint8 (byte)|Dividers ZOrder Offset:| Adjust the Z Order, 0 = draw underneath the shape, 1 = above, any higher to draw above Value Layers, etc. slider max = 32, typed in max = 255.
 ### Values
 |Type|Setting|Description|
 |---|---|---|
@@ -100,6 +114,9 @@ The Rings dividing the Cuts
 |FText|SubLabel:|Usually set to the current value.|
 |FVector2D|Offset:|Additional offset to adjust the position of the Icon, Label, SubLabel and Label Background for this segment only, at once.|
 
+#### FRadarChartColorOverride
+|FText|SubLabel:|Usually set to the current value.|
+|FVector2D|Offset:|Additional offset to adjust the position of the Icon, Label, SubLabel and Label Background for this segment only, at once.|
 
 ### Enums
 #### ERadarChartBlendMode
@@ -109,8 +126,15 @@ The Rings dividing the Cuts
 |Translucent:| Set the Material to Translucent, Render Opacity is supported. Use final Alpha defined by color as opacity.|
 |Additive:| Set the Material to Additive, adds it's color to the underlaying Pixels.|
 
+#### ERadarChartBlendMode
+|Name|Description|
+|---|---|
+|Opaque:| Set the Material to Opaque, Render Opacity is not supported. Best perfomance, less overdraw.|
+|Translucent:| Set the Material to Translucent, Render Opacity is supported. Use final Alpha defined by color as opacity.|
+|Additive:| Set the Material to Additive, adds it's color to the underlaying Pixels.|
 
 # Usage
 
 
 ## Tips
+</body>
