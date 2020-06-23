@@ -8,13 +8,25 @@
 
 Available at the Marketplace: [will follow soon]
 
+
+
+## Table of Contents </summary>
+* 1\. [Overview](#Overview)
+    * 1.1\. [DesignerSettings](#DesignerSettings)
+        * 1.1.1\. [Chart](#ChartSection)
+* 2\. ASD
+
+
+
 # Overview
 <details>
+<a name="DesignerSettings"></a>
 <summary>Designer Settings</summary>
 
 ![Image of Designer Settings](Resources/Settings.png)
 
 + <details>
+    <a name="ChartSection"></a>
     <summary>Chart</summary>
 
     |Setting|Description|
@@ -26,12 +38,13 @@ Available at the Marketplace: [will follow soon]
 </details>
 </details>
 
+
+
 ### Structs
 <details>
 
-<summary>
-<a name="FRadarChartAppearance">FRadarChartAppearance</a>
-</summary>
+<a name="FRadarChartAppearance"></a>
+<summary>FRadarChartAppearance</summary>
 
 |Type|Name|Description
 |---|---|---|
@@ -56,7 +69,8 @@ Available at the Marketplace: [will follow soon]
 </details>
 
 
-## Enums
+
+### Enums
  <details>
 
 ### ERadarChartBlendMode
