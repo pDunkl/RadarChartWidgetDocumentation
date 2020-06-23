@@ -206,7 +206,7 @@ Otherwise all Pins & Icons will stay a their specified PixelSize * DPI;
 <details>
 <summary>Show Example</summary>
 
-|![Undesired Pin Scaling](Resources/BadIconScale.gif)|![Undesired Pin Scaling](Resources/GoodIconScale.gif)|
+|![Undesired Pin Scaling](Resources/BadIconScale.gif)|![Desired Pin Scaling](Resources/GoodIconScale.gif)|
 |---|---|
 </details>
 </body>
