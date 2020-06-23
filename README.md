@@ -26,14 +26,12 @@ Available at the Marketplace: [will follow soon]
 </details>
 </details>
 
-## Structs
-
-
-
-
+### Structs
 <details>
 
-<a name="FRadarChartAppearance"><summary>FRadarChartAppearance</summary></a>
+<summary>
+<a name="FRadarChartAppearance">FRadarChartAppearance</a>
+</summary>
 
 |Type|Name|Description
 |---|---|---|
