@@ -21,7 +21,7 @@ Available at the Marketplace: [will follow soon]
     |---|---|
     |Keep Aspect Ratio:|True = Force the Chart to keep aspect ratio, calculated by the smallest size. </br> False = Stretch to fill.|
     |Scale:|Scale the Radius of the whole Shape. 2.f meaning the shape is the size of the clipping rect. Caution this does not respect the labels!|
-    |Appearance:|Appearance Settings for the Base. See <a href="#FRadarChartAppearance">FRadarChartAppearance</a>|
+    |Appearance:|Appearance Settings for the Base. See [FRadarChartAppearance](#FRadarChartAppearance)|
 
 </details>
 </details>
