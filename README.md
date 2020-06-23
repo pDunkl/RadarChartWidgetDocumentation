@@ -150,7 +150,7 @@ If [Wrap with Invalidation Panel](#Perfomance) is set to true, you must invalida
 |Type|Name|Description
 |---|---|---|
 |TArray<float>|Values:|Array of floats, amount must be equal to the segment array size. Values are normalized (0.0 - 1.0).|
-|[FRadarChartAppearance](FRadarChartAppearance)|Appearance:|Appearance for this Layer. See [FRadarChartAppearance](FRadarChartAppearance)|
+|[FRadarChartAppearance](#FRadarChartAppearance)|Appearance:|Appearance for this Layer. See [FRadarChartAppearance](#FRadarChartAppearance)|
 
 #### FRadarChartSegment
 |Type|Name|Description
