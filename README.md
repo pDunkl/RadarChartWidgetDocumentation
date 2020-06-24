@@ -101,9 +101,14 @@ The Rings dividing the Cuts
 ### Perfomance
 |Type|Setting|Description|
 |---|---|---|
-|bool|Wrap with Invalidation Panel|[Recommended] Wrap the Chart inside an SInvalidationPanel, so it gets cached. Saves performance! But needs to be invalidated if the Chart gets modified. See [Invalidate Panel](#InvalidatePanel)|
+|bool|Wrap with Invalidation Panel|[Recommended] Wrap the Chart inside an SInvalidationPanel, so it gets cached. Saves performance drastically! But needs to be invalidated if the Chart gets modified. See [Invalidate Panel](#InvalidatePanel)|
 
+> Note: You can see the perfomance impact by using the command line ***"STAT RadarChart"***.
+![Stat Command](Resources/StatCommand.png)
 
+>If [Wrap with Invalidation Panel](#Perfomance) ist set to true, the OnPaint is called only on the first couple frames (or when Invalidated manually), and then gets cached. If the "RadarChart::OnPaint Time" is not shown, all visible Charts are cached.
+And you can see the perfomance impact with ***"STAT Slate"***. Look for ***"SInvalidationPanel::Paint"*** (But this is affected by all visible widgets inside an Invalidation Panel).
+![Invalidation Paint](Resources/SInvalidationPanelPaint.png)
 
 # Functions
 ## <a name="SetValues"></a>Set Values
