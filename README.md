@@ -169,7 +169,7 @@ If [Wrap with Invalidation Panel](#Perfomance) is set to true, you must invalida
 |FVector2D|Size:|Size of the Pin. Default = <32.0, 32.0>|
 |[FRadarChartColorOverride](#FRadarChartColorOverride)|Color:|ColorCoding for the Pin. See [FRadarChartColorOverride](#FRadarChartColorOverride).|
 |float|Distance:|Distance offset from the corners. Negative goes towards the center, and positive values in the opposite direction.
-|float|Angle.| Rotate the Icon, in Degrees.|
+|float|Angle:| Rotate the Icon, in Degrees.|
 |uint8 (byte)|ZOrder Offset:| Adjust the Z Order, 0 = draw underneath the shape, 1 = above, any higher to draw above Value Layers, etc. slider max = 32, typed in max = 255.
 
 #### FRadarChartValueData
