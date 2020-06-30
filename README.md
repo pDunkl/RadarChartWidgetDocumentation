@@ -25,7 +25,14 @@ Available at the Marketplace: [will follow soon]
         * 1.2.3\. [Invalidate Panel](#InvalidatePanel)
     * 1.3\. [Types](#Types)
         * 1.3.1\. [Structs](#Structs)
+            * 1.3.1.1 [FRadarChartAppearance](#FRadarChartAppearance)
+            * 1.3.1.2 [FRadarChartColorOverride](#FRadarChartColorOverride)
+            * 1.3.1.3 [FRadarChartValueData](#FRadarChartValueData)
+            * 1.3.1.4 [FRadarChartSegment](#FRadarChartSegment)
         * 1.3.2\. [Enums](#Enums)
+            * 1.3.2.1 [ERadarChartBlendMode](#ERadarChartBlendMode)
+            * 1.3.2.2 [ERadarChartColorOverride](#ERadarChartColorOverride)
+            * 1.3.2.3 [ERadarChartLabelBackgroundMethod](#ERadarChartLabelBackgroundMethod)
     * 1.4\. [Tips](#Tips)
 
 # Overview
