@@ -41,7 +41,7 @@ Available at the Marketplace: [will follow soon]
 <details>
 <summary>Show Screenshot</summary>
 
-![Image of Designer Settings](Resources/Settings.png)
+![Image of Concentric UVs Usage](Resources/ConcentricUVs.png)
 </details>
 
 
@@ -150,7 +150,7 @@ If [Wrap with Invalidation Panel](#Perfomance) is set to true, you must invalida
 |---|---|---|
 |bool|Draw:|Show/Hide the complete Shape Layer, including the Outline and Pins.|
 |bool|Draw Shape:|Show/Hide the Shape.|
-|bool|Concentric UVs:|True: The UVs are layed out pointing towards the center, making it easy to create radial symmetry. <br>False: The UVs are layed out normally.|
+|bool|[Concentric UVs:](#bConcentricUVs)|True: The UVs are layed out pointing towards the center, making it easy to create radial symmetry. <br>False: The UVs are layed out normally.|
 |bool|Draw Outline:|Show/Hide the outline|
 |bool|Draw Pins:|Show/Hide the Pins.|
 |[ERadarChartBlendMode](#ERadarChartBlendMode)|BlendMode:|Set the BlendMode of the used Material. See [ERadarChartBlendMode](#ERadarChartBlendMode)|
@@ -162,6 +162,14 @@ If [Wrap with Invalidation Panel](#Perfomance) is set to true, you must invalida
 |FLinearColor|OutlineColor:|Color for the Outline. Using the Outline is recommended to hide the missing antialiasing from the shape edges.|
 |float|Outline Thickness:|Thickness for the Outline. Default = 1.f, but sometimes you need to increase it to something greater, because of antialiasing glitches.|
 |[FRadarChartPin](#FRadarChartPin)|Pin:| Style for the Pins. Pins are Images/Materials drawn on the corners of the shape.|
+
+
+#### <a name="bConcentricUVs"></a>Concentric UVs Usage
+<details>
+<summary>Show Screenshot:</summary>
+
+![Image of Designer Settings](Resources/ConcentricUVs.png)
+</details>
 
 #### FRadarChartColorOverride
 |Type|Name|Description
