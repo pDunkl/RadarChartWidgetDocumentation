@@ -7,7 +7,7 @@
 |---|---|
 
 
-Available at the Marketplace: [will follow soon]
+Available at here : [Marketplace](https://unrealengine.com/marketplace/en-US/product/radar-chart-widget)
 
 ## Content </summary>
 * 1\. [Overview](#Overview)
