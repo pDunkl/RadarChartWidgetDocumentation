@@ -229,7 +229,7 @@ If [Wrap with Invalidation Panel](#Perfomance) is set to true, you must invalida
 |Label:|Wrap around the text Label.|
 |SubLabel:|Wrap around the SubLabel text.|
 |Icon:|Wrap around the icon.|
-|Custom:|Use Padding as Background Padding as size instead.|
+|Custom:|Use Background Padding as size.|
 
 
 
