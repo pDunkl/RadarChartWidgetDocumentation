@@ -3,6 +3,9 @@
 <h1>Radar Chart Widget</h1>
 <body>
 
+
+<h1>[UNDER CONSTRUCTION FOR 3.0] this get's moved</h1>
+
 |<img src="Resources/Thumbnail.png" alt="drawing" width="100"/>| <h2> Documentation for the Radar Chart Widget Plugin for Unreal Engine </h2>|
 |---|---|
 
