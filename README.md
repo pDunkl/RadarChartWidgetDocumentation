@@ -6,11 +6,12 @@
 |<img src="Resources/Thumbnail.png" alt="drawing" width="100"/>| <h2> Documentation for the Radar Chart Widget Plugin for Unreal Engine </h2>|
 |--|--|
 
-Documentation for the previous version is available here: [deprecated Documentation v2]('file://./v2/Documentation/Readme.md') <br>
-
 The Plugin is available here : [Marketplace](https://unrealengine.com/marketplace/en-US/product/radar-chart-widget)
-
-
+<br>
+<br>
+If you are looking for the Documentation for the old plugin (v2.x): [Deprecated Documentation](https://github.com/pDunkl/RadarChartWidgetDocumentation/tree/Deprecated) <br>
+<br>
+<br>
 # Overview
 * 1\. [UMG Designer Settings](#Designer-Settings)
 * 2\. [Functions](#Functions)
