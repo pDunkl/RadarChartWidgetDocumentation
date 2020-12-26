@@ -84,6 +84,9 @@ If you are looking for the Documentation for the old plugin (v2.x): [Deprecated 
 ### Base
 |Type|Setting|Description|
 |--|--|--|
+|float|Normalization Scale:|The scale the values get normalized to|
+|float|Chart Radius:|The Radius of the Chart Base|
+|float|Start Angle:|Rotate the whole Chart| 
 |[FRadarChartAppearance](#FRadarChartAppearance)>|Appearance|Base shape appearance settings. See [FRadarChartAppearance](#FRadarChartAppearance)|
 |TArray<[FRadarChartSegment](#FRadarChartSegment)>|Segments|Array of Segments, at least 3 Segments are required to draw a triangular shape. See [FRadarChartSegment](#FRadarChartSegment)|
 
