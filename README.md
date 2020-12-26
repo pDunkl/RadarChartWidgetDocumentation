@@ -299,10 +299,6 @@ ColumnRow, x = Column, y = Row Parameter.
 # Command
 You can see the perfomance impact by using the command line
 <br>***"STAT RadarChart"***.
-![Stat Command](Resources/StatCommand.png)
-
-
-
 
 * **"RadarChart::OnPaint Time"**: The time to draw the widgets, if it is not shown, all visible Charts are cached.
 And you can see the perfomance impact with ***"STAT Slate"***. Look for ***"SInvalidationPanel::Paint"*** (But this is affected by all visible widgets inside an Invalidation Panel).
