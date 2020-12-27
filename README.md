@@ -113,7 +113,7 @@ Units from center to the outer ring, giving information about the scale. <br>
 Center = 0, Outer Ring = Normalization Scale value
 |Type|Setting|Description|
 |--|--|--|
-|uint8 (byte)|Units:|How many units should be drawn.<br>0 = off, 1, slider max = 24, typed in max = 128.|
+|uint8 (byte)|Units:|How many units should be drawn.<br>0 = off, slider max = 24, typed in max = 128.|
 |uint8 (byte)|Show Every N Unit:|1 = Show every unit, 2 = show every second unit, and so on.<br>Slider max = 24, typed in max = 128.|
 |uint8 (byte)|Units Source Segment:|Along which segment the units should be drawn.<br>Slider max = 32, typed in max = 128.|
 |bool|Position Units between Cuts:|Should we center the ruler between two cuts?|
