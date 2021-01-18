@@ -287,7 +287,7 @@ ColumnRow, x = Column, y = Row Parameter.
 
 ## ERadarChartEventSource
 |Name|
-|--|--|
+|--|
 |Base Label|
 |Base Pin|
 |Value Label|
